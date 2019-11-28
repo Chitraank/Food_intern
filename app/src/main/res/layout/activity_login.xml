@@ -7,16 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/user_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/profile"
-        android:layout_above="@+id/text_layout_email"
-        android:layout_marginBottom="40dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/circle_stroke_yellow"
-        />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
