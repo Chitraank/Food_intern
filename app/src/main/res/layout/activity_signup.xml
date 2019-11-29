@@ -187,12 +187,166 @@
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/layout_rno"
+        android:layout_below="@+id/layout_phone_num"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/signup"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/rno"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_layout_rno">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rno"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/yellow"
+                android:textColor="@color/yellow"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                android:hint="@string/rno"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_branch"
+        android:layout_below="@+id/layout_rno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/signup"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/branch_grey"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_layout_branch">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/branch"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/yellow"
+                android:textColor="@color/yellow"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                android:hint="@string/branch"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_hostel"
+        android:layout_below="@+id/layout_branch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/signup"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/home_grey"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_layout_hostel">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/yellow"
+                android:textColor="@color/yellow"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                android:hint="@string/hostel"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_room_no"
+        android:layout_below="@+id/layout_hostel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/signup"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/room"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_layout_room_no">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/room_no"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/yellow"
+                android:textColor="@color/yellow"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                android:hint="@string/room_no"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+
     <Button
         android:id="@+id/btn_sign_in"
         android:onClick="signUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/layout_phone_num"
+        android:layout_below="@+id/layout_room_no"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginTop="30dp"
