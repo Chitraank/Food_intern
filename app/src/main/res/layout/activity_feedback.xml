@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Feedback">
+    android:layout_height="wrap_content"
+    tools:context=".My_test"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <View
         android:id="@+id/main_view"
@@ -27,7 +31,7 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:textStyle="bold"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:text="@string/feedback"
         android:textColor="@color/white"
         android:layout_alignParentEnd="true"
@@ -42,7 +46,7 @@
         android:gravity="center_horizontal"
         android:textAllCaps="false"
         android:textStyle="bold"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:text="@string/good"
         android:textColor="@color/white"
         android:layout_below="@+id/feedback"
@@ -63,40 +67,29 @@
         android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp">
 
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:textAllCaps="false"
-            android:textColor="@color/peach"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:text="@string/average"
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@drawable/mood_bad_pink"
             android:layout_column="1"
             android:layout_row="0"
             android:layout_margin="10dp"/>
 
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:textAllCaps="false"
-            android:textColor="@color/peach"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:text="@string/good_"
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@drawable/mood_nuetral_pink"
             android:layout_column="2"
             android:layout_row="0"
             android:layout_margin="10dp"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:textAllCaps="false"
-            android:textColor="@color/peach"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:text="@string/delecious"
-            android:layout_column="3"
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_row="0"
-            android:layout_margin="10dp"/>
+            android:layout_column="3"
+            android:layout_margin="10dp"
+            android:src="@drawable/mood_happy_pink" />
 
         <TextView
             android:layout_height="wrap_content"
@@ -269,7 +262,7 @@
                 android:textColorHint="@color/yellow"
                 android:textColor="@color/yellow"
                 android:inputType="textMultiLine"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:hint="@string/comments"/>
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
@@ -283,36 +276,37 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="133dp"
+            android:layout_width="125dp"
             android:layout_height="match_parent"
             android:background="@drawable/gradient2"
             android:text="@string/back"
             android:textStyle="bold"
-            android:textSize="22sp"
+            android:textSize="18sp"
             android:textColor="@color/white"
             android:textAllCaps="true"
             style="?attr/buttonBarButtonStyle"
             />
         <Button
-            android:layout_width="133dp"
+            android:layout_width="125dp"
             android:layout_height="match_parent"
             android:background="@drawable/gradient2"
             android:text="@string/edit"
             android:textStyle="bold"
-            android:textSize="22sp"
+            android:textSize="18sp"
             android:textColor="@color/white"
             android:textAllCaps="true"
             style="?attr/buttonBarButtonStyle"/>
         <Button
-            android:layout_width="133dp"
+            android:layout_width="125dp"
             android:layout_height="match_parent"
             android:background="@drawable/gradient2"
             style="?attr/buttonBarButtonStyle"
             android:text="@string/submit"
             android:textStyle="bold"
-            android:textSize="22sp"
+            android:textSize="18sp"
             android:textColor="@color/white"
             android:textAllCaps="true"/>
 
     </LinearLayout>
 </RelativeLayout>
+</ScrollView>

@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"/>
         <activity android:name=".Feedback" />
         <activity android:name=".Suggestions" />
         <activity android:name=".Sign_in_up" />
         <activity android:name=".Signup" />
         <activity android:name=".Login" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".My_test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
