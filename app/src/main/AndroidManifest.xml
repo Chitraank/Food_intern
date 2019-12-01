@@ -9,13 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Feedback"/>
-        <activity android:name=".My_test" />
-        <activity android:name=".Suggestions" />
-        <activity android:name=".Sign_in_up" />
-        <activity android:name=".Signup" />
-        <activity android:name=".Login" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Dashboard"></activity>
+        <activity
+            android:name=".Meals"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Feedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Suggestions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sign_in_up"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
