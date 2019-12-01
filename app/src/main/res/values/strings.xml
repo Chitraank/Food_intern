@@ -48,7 +48,6 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="rno">Roll Number</string>
-    <string name="branch">Branch</string>
-    <string name="hostel">Hostel</string>
+
     <string name="room_no">Room Number</string>
 </resources>
